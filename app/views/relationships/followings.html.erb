@@ -1,7 +1,7 @@
-<h2>Followers User</h2>
+<h2>Follow User</h2>
 <% if @users.exists? %>
 
-<%= render 'users/index', users: @users %>
+<%= render '/users/index', users: @users %>
 <!--<#% @user.each do |user| %>-->
 <!--<table class="table">-->
 <!--  <thead>-->
@@ -15,7 +15,7 @@
 <!--    <tr>-->
 <!--      <td><#%= image_tag user.get_profile_image, size: '50x50' %></td>-->
 <!--      <td><#%= user.name %></td>-->
-<!--      <td>フォロー数:<#%= user.followings.count %></td>-->
+<!--      <td>フォロー数:<3%= user.followings.count %></td>-->
 <!--      <td>フォロワー数:<#%= user.followers.count %></td>-->
 <!--      <td><#%= link_to "show", user %></td>-->
 <!--    </tr>-->
